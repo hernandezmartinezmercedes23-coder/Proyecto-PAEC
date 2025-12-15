@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Proyecto Educativo — Tipos de Aprendizaje y TEA (Con Formulario)</title>
+
+  <!-- Fuente -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+  <!-- CSS externo -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- HEADER -->
+    <header class="header">
+      <div class="inner">
+        <div class="brand">
+          <div class="logo">PAEC</div>
+          <div>
+            <strong>Proyecto Educativo</strong><br>
+            Tipos de Aprendizaje y TEA
+          </div>
+        </div>
+        <nav>
+          <a href="#aprendizaje">Aprendizaje</a>
+          <a href="#tea">TEA</a>
+          <a href="#formulario">Formulario</a>
+          <a href="#quiz">Quiz</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="cover">
+        <img src="https://images.unsplash.com/photo-1588072432836-e10032774350" alt="Educación">
+      </div>
+      <div class="summary">
+        <h1>Tipos de Aprendizaje y TEA</h1>
+        <p>
+          Conoce los distintos estilos de aprendizaje y cómo se relacionan con
+          el Trastorno del Espectro Autista, promoviendo una educación inclusiva.
+        </p>
+      </div>
+    </section>
+
+    <!-- CONTENIDO -->
+    <section class="layout">
+
+      <main>
+        <section id="aprendizaje" class="card">
+          <h2>Tipos de Aprendizaje</h2>
+          <ul>
+            <li><strong>Visual:</strong> Aprende mejor con imágenes y gráficos.</li>
+            <li><strong>Auditivo:</strong> Prefiere escuchar explicaciones.</li>
+            <li><strong>Kinestésico:</strong> Aprende haciendo y practicando.</li>
+          </ul>
+        </section>
+
+        <section id="tea" class="card">
+          <h2>¿Qué es el TEA?</h2>
+          <p>
+            El Trastorno del Espectro Autista es una condición del desarrollo que
+            afecta la comunicación, la interacción social y el comportamiento.
+          </p>
+        </section>
+
+        <section id="formulario" class="card">
+          <h2>Formulario</h2>
+          <form id="contact-form">
+            <label>
+              Nombre
+              <input type="text" name="name" required>
+            </label>
+
+            <label>
+              Correo
+              <input type="email" name="email" required>
+            </label>
+
+            <label>
+              Mensaje
+              <textarea name="message" required></textarea>
+            </label>
+
+            <button type="submit">Enviar</button>
+            <button type="reset" class="secondary">Limpiar</button>
+          </form>
+          <p id="form-message"></p>
+        </section>
+      </main>
+
+      <!-- ASIDE / QUIZ -->
+      <aside class="card">
+        <h2>Quiz</h2>
+
+        <form id="quiz">
+          <label>
+            1. ¿Qué tipo de aprendizaje usa imágenes?
+            <select id="q1">
+              <option value="">Selecciona</option>
+              <option value="Visual">Visual</option>
+              <option value="Auditivo">Auditivo</option>
+            </select>
+          </label>
+
+          <fieldset>
+            <legend>2. Método recomendado</legend>
+            <label><input type="radio" name="q2" value="Role-play"> Role-play</label>
+            <label><input type="radio" name="q2" value="Lectura"> Lectura</label>
+          </fieldset>
+
+          <label>
+            3. ¿Qué significa TEA?
+            <select id="q3">
+              <option value="">Selecciona</option>
+              <option value="Espectro">Trastorno del Espectro Autista</option>
+              <option value="Educativo">Trastorno Educativo</option>
+            </select>
+          </label>
+
+          <button type="submit">Enviar</button>
+        </form>
+
+        <div id="quiz-result"></div>
+
+        <div id="trophy-wrap">
+          🏆 ¡Excelente!
+        </div>
+
+        <div id="confetti" aria-hidden="true"></div>
+      </aside>
+
+    </section>
+  </div>
+
+  <!-- JS externo -->
+  <script src="main.js"></script>
+</body>
+</html>
